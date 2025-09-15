@@ -5,7 +5,7 @@ metadata:
   labels:
     app: java-sample-app
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: java-sample-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: java-sample-app
-        image: <seu-usuario-dockerhub>/java-sample-app:latest
+        image: william201192/java-sample-app:latest
         ports:
         - containerPort: 8080
